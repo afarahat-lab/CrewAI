@@ -1,62 +1,71 @@
-Here is the tailored resume for Noah Williams, strategically updated to highlight his qualifications and experiences relevant to the generic expectations of a software engineering leadership position.
+Noah Williams  
+Colombia (Remote) | Email: noah.williams@example.dev | Phone: +44 11 111 11111  
+GitHub: https://github.com/joaomdmoura | Website: https://crewai.com | X: @joaomdmoura
 
 ---
 
-**Noah Williams: Comprehensive Personal and Professional Profile**
-
-**Personal Overview:**
-Noah Williams is an experienced Software Engineering Leader with over 18 years of professional excellence in managing diverse and distributed engineering teams. An MBA graduate specializing in AI and data science, Noah has consistently leveraged his technical and strategic expertise to drive innovation and business success in digitally-focused companies.
-
-**Key Skills:**
-- **Languages:** Expert in Ruby, Python, JavaScript, TypeScript, and Elixir.
-- **Frameworks:** Extensive experience with advanced front-end and backend frameworks to create scalable and maintainable applications.
-- **Data Science and Machine Learning**: Proficient in developing and integrating data-driven technologies to enhance business solutions.
-- **Leadership:** Proven track record in strategic project management, effective team building, talent recruitment, and fostering environments of innovation and continuous improvement.
-
-**Professional Experience:**
-- **DataKernel**: *Director of Software Engineering (Remote, 2022-Present)*
-  - Elevated engineering to a critical revenue driver, significantly expanding the customer base through strategic innovations in AI.
-  - Initiated and seamlessly integrated cutting-edge artificial intelligence technologies creating significant customer value and operational efficiencies.
-  
-- **DataKernel**: *Senior Software Engineering Manager (Remote, 2019-2022)*
-  - Oversaw the strategic planning and execution of engineering operations, managed distributed teams across multiple time zones.
-  - Emphasized and implemented a culture of continuous improvement, leading to significant advancements in project turnaround times and system reliability.
-
-- **InnovPet**: *Founder & CEO (Remote, 2019-2022)*
-  - Orchestrated the development and launch of forward-thinking IoT solutions for pet care from concept visualization to market release.
-  - Established a robust advisory board, driving technological and business strategy, effectively scaling product development and operations.
-
-- **EliteDevs**: *Engineering Manager (Remote, 2018-2019)*
-  - Implemented strategic initiatives enhancing cross-departmental collaboration and integration, improving operational efficiencies.
-  - Led multiple engineering teams, striking a balance between productivity and innovation, significantly advancing product development cycles.
-
-- **PrintPack**: *Engineering Manager (Remote, 2016-2018)*
-  - Spearheaded the development of high-performance teams; integrated data analytics into strategic planning to optimize decision-making processes.
-
-- **DriveAI**: *Senior Software Engineer (Remote, 2015-2016)*
-  - Led the development and optimization of central APIs; implemented advanced caching strategies that enhanced overall system performance and scalability.
-
-- **BetCraft**: *CTO (2013-2015)*
-  - Directed technological strategies and infrastructure expansion, resulting in improved platform efficiency and expansion into new markets post-Series A funding.
-
-**Education:**
-- **MBA in Information Technology**, London Business School
-- **Advanced Leadership Techniques Certification**, University of London
-- **Data Science Specialization**, Coursera (Johns Hopkins University)
-- **B.Sc. in Computer Science**, University of Edinburgh
-
-**Project Highlights:**
-- **crewAI**: Founder, created a scalable framework facilitating AI-driven role-playing autonomous agents.
-- **active_model_serializers**: Contributor, enhanced Rails integrations promoting better serialization efficiencies.
-- **machinery**: Originator, developed a minimalist Elixir state machine framework to handle complex application states effectively.
-- **gioco**: Developed a Ruby on Rails gamification toolkit to drive user engagement and increase platform stickiness.
-
-**Interests:**
-Noah actively seeks opportunities to integrate AI within collaborative platforms, striving for the orchestration of autonomous workflows and advancing operational productivity through technology solutions.
-
-**Communication Style:**
-Known for a leadership style marked by strategic foresight and clarity, Noah effectively cultivates workplaces where transparency and respect drive superior team morale and high performance.
+## SUMMARY
+Full Stack Engineer and Engineering Leader (18 years) with deep hands-on experience building and scaling web products end-to-end—front-end (React/Angular, HTML/CSS/JS/TS) through backend/API development (Ruby, Python, Elixir) and databases (MongoDB). Proven ability to ship in early-stage environments, collaborate cross-functionally with product and business stakeholders, and own delivery from ideation to deployment. Strong background applying AI/data techniques in production systems, with a track record of debugging, performance optimization (caching, API latency), and building secure, maintainable software.
 
 ---
 
-This resume is crafted to highlight Noah’s vast experience in software engineering management, emphasizing his technical skills, leadership qualities, and successful track record in innovation and strategic development.
+## CORE SKILLS
+**Full Stack Development:** React, Angular, JavaScript, TypeScript, HTML, CSS, Ruby on Rails  
+**Backend & API:** Ruby, Python, Elixir; REST APIs; service design; caching/performance optimization  
+**Databases:** MongoDB (hands-on); data modeling; application persistence  
+**AI / Data:** Applied data science; AI-enabled product features; predictive modeling  
+**Delivery & Quality:** Troubleshooting, debugging, upgrades; responsiveness & efficiency testing; scalable system design  
+**Collaboration & Leadership:** Cross-functional delivery with product managers; remote team leadership; recruiting/mentoring; stakeholder communication; project organization
+
+---
+
+## PROFESSIONAL EXPERIENCE
+
+### DataKernel — Director of Software Engineering (Remote) | 2022 – Present
+- Led engineering delivery as a core revenue driver, scaling the product and customer community from early-stage to a robust user base.
+- Partnered with product and leadership to ideate and execute software solutions, translating business goals into shippable engineering plans.
+- Drove adoption of AI capabilities and scalable data infrastructure (including vector database usage) to expand product functionality and market positioning.
+- Built engineering processes that improved execution under ambiguity: prioritization, ownership, and accountability across distributed teams.
+- Oversaw troubleshooting and continuous improvement, ensuring systems remained reliable, responsive, and scalable as usage grew.
+
+### DataKernel — Senior Software Engineering Manager (Remote) | 2019 – 2022
+- Directed engineering strategy and operations in close collaboration with C-level stakeholders, aligning roadmap, delivery, and technical execution.
+- Managed distributed teams across North America and Europe, improving communication, execution clarity, and outcomes across time zones.
+- Owned hiring, mentoring, and retention initiatives to build high-performing teams capable of delivering full lifecycle features (build → test → deploy → iterate).
+- Strengthened project planning and operational rigor to improve delivery predictability while maintaining speed in an early-stage environment.
+
+### InnovPet — Founder & CEO (Remote) | 2019 – 2022
+- Founded and led an IoT startup; owned the full product lifecycle from concept to market entry, coordinating engineering and external partners.
+- Delivered the initial product implementation and data layer, leveraging **MongoDB** for core application persistence.
+- Built operational foundations (advisory board, overseas production facilities) and led the company through initial funding, demonstrating scrappy execution and ownership.
+- Balanced product, engineering, and go-to-market constraints to deliver a consumer-facing solution under limited resources.
+
+### EliteDevs — Engineering Manager (Remote) | 2018 – 2019
+- Managed multiple engineering teams and implemented goal-setting frameworks that improved coordination and delivery outcomes.
+- Hands-on contributor building a new product using **Ruby on Rails** and **React**, supporting rapid feature development and iteration.
+- Improved cross-department trust and execution by establishing clearer planning, status reporting, and delivery expectations.
+
+### PrintPack — Engineering Manager (Remote) | 2016 – 2018
+- Built and led a high-performing engineering team that contributed to **500% revenue growth** over two years.
+- Integrated data analytics into product and business decision-making; led development of predictive modeling to better understand customer behavior.
+- Delivered features with a focus on reliability and maintainability, ensuring the product scaled with business growth.
+
+### DriveAI — Senior Software Engineer (Remote) | 2015 – 2016
+- Developed and optimized a central API used by a large engineering team and thousands of users.
+- Implemented caching strategies and performance improvements that reduced response times and system load, increasing overall responsiveness and efficiency.
+- Troubleshot and debugged production issues, delivering upgrades to improve stability and scalability.
+
+### BetCraft — CTO | 2013 – 2015
+- Led technology strategy post–Series A, reporting to the board and driving platform improvements through a phase of growth and increased demand.
+- Helped build core product features using **React** and **Angular**, strengthening full stack capability across modern front-end frameworks.
+- Established technical direction and execution plans that improved platform performance and supported market expansion.
+
+---
+
+## EDUCATION
+**MBA, Information Technology** — London Business School  
+**B.Sc., Computer Science** — University of Edinburgh  
+
+**Certifications**
+- Data Science Specialization — Coursera (Johns Hopkins University)  
+- Advanced Leadership Techniques — University of London

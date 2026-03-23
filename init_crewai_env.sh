@@ -82,7 +82,8 @@ install_dependencies() {
     litellm \
     llama-index \
     llama-index-llms-ollama \
-    llama-index-embeddings-ollama
+    llama-index-embeddings-ollama \
+    rich
 }
 
 main() {
