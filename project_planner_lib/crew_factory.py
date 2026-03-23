@@ -70,17 +70,11 @@ def create_crew(llm: LLM, verbose: bool = False) -> Crew:
     for task_name in tasks_config:
         task_config = tasks_config[task_name]
         
-        # if task_config.get("output_pydantic") is not None:
-        #     task_config["output_pydantic"] = locals().get(task_config["output_pydantic"])  # Specify the structured output for this task
+        if task_config.get("output_pydantic") is not None:
+            task_config["output_pydantic"] = locals().get(task_config["output_pydantic"])  # Specify the structured output for this task
 
         task = Task(config=task_config, agent=agents[task_config["agent"]])  # Assigning the first agent for simplicity
         tasks.append(task)
-
-    # resource_allocation = Task(
-    #     config=tasks_config["resource_allocation"],
-    #     agent=resource_allocation_agent,
-    #     output_pydantic=ProjectPlan,  # This is the structured output we want
-    # )
 
     return Crew(
         agents=list(agents.values()),  # Pass the list of agent instances

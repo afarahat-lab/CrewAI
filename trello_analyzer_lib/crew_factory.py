@@ -1,11 +1,9 @@
 import os, yaml
+from pathlib import Path
 from crewai import Agent, Crew, CrewOutput, Task
 from crewai.types.streaming import CrewStreamingOutput
 from crewai.llm import LLM
-
-
-from pathlib import Path
-
+from .trello_tools import BoardDataFetcherTool, CardDataFetcherTool
 
 def load_yaml_config(file_path: str) -> dict:
     base_dir = Path(__file__).resolve().parent
@@ -30,32 +28,6 @@ def create_crew(llm: LLM, verbose: bool = False) -> Crew:
     agents_config = configs["agents"]
     tasks_config = configs["tasks"]
 
-    from typing import List
-    from pydantic import BaseModel, Field
-
-    class TaskEstimate(BaseModel):
-        task_name: str = Field(..., description="Name of the task")
-        estimated_time_hours: float = Field(
-            ..., description="Estimated time to complete the task in hours"
-        )
-        required_resources: List[str] = Field(
-            ..., description="List of resources required to complete the task"
-        )
-
-    class Milestone(BaseModel):
-        milestone_name: str = Field(..., description="Name of the milestone")
-        tasks: List[str] = Field(
-            ..., description="List of task IDs associated with this milestone"
-        )
-
-    class ProjectPlan(BaseModel):
-        tasks: List[TaskEstimate] = Field(
-            ..., description="List of tasks with their estimates"
-        )
-        milestones: List[Milestone] = Field(
-            ..., description="List of project milestones"
-        )
-
     agents: dict[str, Agent] = {} # This will hold our agent instances
     tasks: list[Task] = []  # This will hold our task instances
 
@@ -63,6 +35,15 @@ def create_crew(llm: LLM, verbose: bool = False) -> Crew:
     for agent_name in agents_config:
         agent_config = agents_config[agent_name]
         agent_config["llm"] = llm  # Inject the LLM into each agent's config
+
+        if agent_config.get("tools_names") is not None:
+            agent_config["tools"] = []  # Initialize the tools list in the agent config
+
+            for tool_name in agent_config["tools_names"]:
+                tool_class = globals().get(tool_name)  # Load tool config from YAML
+                if tool_class is not None:
+                    agent_config["tools"].append(tool_class())  # Add the tool to the agent
+
         agent = Agent(config=agent_config)
         agents[agent_name] = agent
 
@@ -70,8 +51,8 @@ def create_crew(llm: LLM, verbose: bool = False) -> Crew:
     for task_name in tasks_config:
         task_config = tasks_config[task_name]
         
-        # if task_config.get("output_pydantic") is not None:
-        #     task_config["output_pydantic"] = locals().get(task_config["output_pydantic"])  # Specify the structured output for this task
+        if task_config.get("output_pydantic") is not None:
+            task_config["output_pydantic"] = locals().get(task_config["output_pydantic"])  # Specify the structured output for this task
 
         task = Task(config=task_config, agent=agents[task_config["agent"]])  # Assigning the first agent for simplicity
         tasks.append(task)
